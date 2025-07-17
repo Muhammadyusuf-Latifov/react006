@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/layout/Layout";
-import Home from "./pages/home/home";
+import Home from "./pages/home/Home";
 import Comment from "./pages/comments/Comment";
 import Todos from "./pages/todos/Todos";
 import Albums from "./pages/albums/Albums";
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/users" element={<Users />} />
         </Route>
         <Route path="/login" element={<Login />} />
-        <Route path="*" element={ <NotFound/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
